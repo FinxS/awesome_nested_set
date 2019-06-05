@@ -145,7 +145,7 @@ module CollectiveIdea #:nodoc:
             end
           end
 
-          self.class.base_class.nested_set_scope options
+          self.class.base_class.unscoped.nested_set_scope options
         end
 
         # Separate an other `nested_set_scope` for unscoped model
